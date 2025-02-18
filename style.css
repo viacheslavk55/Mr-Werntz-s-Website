@@ -28,12 +28,12 @@ body {
 /* Header & Navigation */
 header {
   background-color: var(--primary-color);
-  position: fixed;
   width: 100%;
   z-index: 1000;
 }
 
 #navbar {
+  
   justify-content: center; /* Center content */
   align-items: center;
   padding: 1rem 0;
@@ -84,16 +84,34 @@ header {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--primary-color), #1a3bbf);
-  color: white;
+  color: var(--primary-color);
 }
 
 .hero-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  height: 100%;
 }
+
+.homepage-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #e6a100;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px; 
+  text-align: center;
+}
+
 
 .hero h1 {
   font-size: 3rem;
@@ -170,6 +188,7 @@ header {
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
+  justify-content: center;
 }
 
 .course-card:hover {
@@ -332,7 +351,6 @@ body {
 /* Hero Section */
 .hero-section {
   background-color: #e9ecef;
-  padding: 5rem 0;
   text-align: center;
 }
 .hero-section h1 {
@@ -399,5 +417,17 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+.cb{
+  color: var(--primary-color);
+}
 
 
+.cb {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Adjust weight if needed */
+}
+
+.col-md-8 img {
+  border: 4px solid #0d21a7; 
+  border-radius: 10px; 
+}
