@@ -3,7 +3,7 @@
   --secondary-color: #FFB81C;
   --text-color: #333;
   --bg-color: #f4f4f4;
-  --transition: all 0.3s ease-in-out;
+  --transition: all 0.6s ease-in-out;
 }
 
 * {
@@ -96,20 +96,6 @@ header {
   align-items: center;
   justify-content: center; 
   text-align: center;
-  height: 100%;
-}
-
-.homepage-button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  background-color: #eec643;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px; 
-  text-align: center;
 }
 
 
@@ -153,7 +139,6 @@ header {
 
 /* About Section */
 .about {
-  padding: 5rem 0;
   background-color: white;
 }
 
@@ -193,6 +178,7 @@ header {
 
 .course-card:hover {
   transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .course-card i {
@@ -244,7 +230,7 @@ header {
 }
 
 .submit-btn:hover {
-  background-color: #0a1a85;
+  background-color: var(--secondary-color);
 }
 
 /* Footer */
@@ -458,3 +444,56 @@ footer {
 
 
 
+/* From Uiverse.io by BHARGAVPATEL1244 */ 
+.bt1 {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: var(--secondary-color);
+  color: ghostwhite;
+ }
+ 
+ .bt1 span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+ }
+ 
+ .bt1:hover span {
+  color: var(--primary-color);
+ }
+ 
+ .bt1::before,
+ .bt1::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+ 
+ .bt1::before {
+  content: "";
+  background: var(--primary-color);
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ .bt1:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ 

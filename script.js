@@ -10,3 +10,6 @@ document.getElementById("HE").addEventListener("click", function() {
 document.getElementById("YT").addEventListener("click", function() {
     window.open("https://www.youtube.com/channel/UC9aXXl56PYVK-GSPISyCLQg?view_as=subscriber", "_blank");
 });
+function scrollDown() {
+    window.scrollBy({ top: 900, behavior: 'smooth' });
+}
