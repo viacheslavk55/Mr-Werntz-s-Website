@@ -105,7 +105,7 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  background-color: #e6a100;
+  background-color: #eec643;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 20px; 
@@ -201,7 +201,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.course-card h3 {
+.course-card h4 {
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
@@ -405,9 +405,33 @@ body {
 }
 
 /* Carousel Section */
+.carousel {
+  max-width: 900px; /* Adjusts the max width of the carousel */
+  margin: auto; /* Centers the carousel */
+}
+
 .carousel-item img {
-  max-height: 500px;
-  object-fit: cover;
+  height: 500px; /* Adjust height for better visibility */
+  object-fit: cover; /* Ensures images fill the space without distortion */
+  border-radius: 10px; /* Adds a rounded effect */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-txt {
+  text-align: center;
+  padding-bottom: 5px;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel-inner {
+  border: 4px solid #ecb92d; 
+  border-radius: 15px;
 }
 
 /* Footer */
@@ -431,3 +455,6 @@ footer {
   border: 4px solid #0d21a7; 
   border-radius: 10px; 
 }
+
+
+
