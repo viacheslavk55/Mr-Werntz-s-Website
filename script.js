@@ -13,3 +13,6 @@ document.getElementById("YT").addEventListener("click", function() {
 function scrollDown() {
     window.scrollBy({ top: 900, behavior: 'smooth' });
 }
+document.getElementById("mn").addEventListener("click", function() {
+    window.open("video2.html", "_blank");
+});

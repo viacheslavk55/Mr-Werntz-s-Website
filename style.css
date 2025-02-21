@@ -497,3 +497,15 @@ footer {
   transform: translate3d(100%, 0, 0);
  }
  
+ iframe {
+  border: 5px solid #e6a100; 
+  border-radius: 10px; 
+}
+#grading{
+  transition: transform 1s ease-in-out;
+}
+#grading:hover{
+  cursor: pointer;
+  transform: scale(103%);
+}
+
