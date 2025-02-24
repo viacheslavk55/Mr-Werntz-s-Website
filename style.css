@@ -498,7 +498,7 @@ footer {
  }
  
  iframe {
-  border: 5px solid #e6a100; 
+  border: 5px solid #0d21a7; 
   border-radius: 10px; 
 }
 #grading{
@@ -509,3 +509,11 @@ footer {
   transform: scale(103%);
 }
 
+.border-blue {
+border: 3px solid blue;
+}
+
+
+.border-yellow {
+  border: 5px solid #ecb92d;
+}
