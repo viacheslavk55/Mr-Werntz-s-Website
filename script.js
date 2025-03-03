@@ -16,3 +16,14 @@ function scrollDown() {
 document.getElementById("mn").addEventListener("click", function() {
     window.open("video2.html", "_blank");
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+
+        // Burger animation (optional)
+        burger.classList.toggle('toggle');
+    });
+});
